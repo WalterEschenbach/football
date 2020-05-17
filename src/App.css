@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  background: #282c34;
+  height: 100vh;
 }
-
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
