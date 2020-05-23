@@ -21,6 +21,7 @@
     "stripe": "^8.55.0"
   },
   "scripts": {
+    "dev": "next",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
