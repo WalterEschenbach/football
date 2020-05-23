@@ -20,7 +20,7 @@ const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 // called more times than it needs to
 
 const Layout = ({ children, title }) => {
-  console.log(process.env);
+  console.log(process.env.REACT_APP_PUBLISHABLE_KEY);
   return (
     <>
       <GlobalStyles />

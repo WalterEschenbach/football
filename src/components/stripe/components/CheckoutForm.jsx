@@ -57,6 +57,7 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
       const { data: clientSecret } = await axios.post("/api/payment_intents", {
         amount: price * 100,
       });
+      console.log(clientSecret);
 
       const paymentMethodReq = await stripe.createPaymentMethod({
         type: "card",
