@@ -1,13 +1,13 @@
 import React from "react";
 import NavBar from "./components/Nav";
-import SignUp from "./components/SignUpModal";
+import MainPage from "./components/stripe/pages/index";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <SignUp />
+      <MainPage />
     </div>
   );
 }
