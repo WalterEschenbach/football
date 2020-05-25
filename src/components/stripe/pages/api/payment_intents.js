@@ -12,7 +12,6 @@ export default async (req, res) => {
       // it gets sent to the server. A good approach is to send the quantity of
       // a uniquely identifiable product and calculate the total price server-side.
       // Then, you would only fulfill orders using the quantity you charged for.
-      console.log(process.env.REACT_APP_SECRET_KEY);
 
       const paymentIntent = await stripe.paymentIntents.create({
         amount,
@@ -20,7 +19,6 @@ export default async (req, res) => {
       });
 
       res.status(200).send(paymentIntent.client_secret);
-      console.log(paymentIntent.client_secret);
     } catch (err) {
       res.status(500).json({ statusCode: 500, message: err.message });
     }
